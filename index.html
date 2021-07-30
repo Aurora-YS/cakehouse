@@ -5,7 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cakehouse 주영선</title>
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".sec_01").click(function(){
+                $("html, body").animate({scrollTop : $("#sec_01").offset().top - 60}, 1000);
+                return false;
+            });
+            $(".sec_02").click(function(){
+                $("html, body").animate({scrollTop : $("#sec_02").offset().top - 60}, 1000);
+                return false;
+            });
+            $(".sec_03").click(function(){
+                $("html, body").animate({scrollTop : $("#sec_03").offset().top - 60}, 1000);
+                return false;
+            });
+
+            $(".sec_04").click(function(){
+                $("html, body").animate({scrollTop : $("#sec_04").offset().top - 60}, 1000);
+                return false;
+            });
+        });
+    </script>
 </head>
 <body>
     
@@ -30,19 +53,19 @@
                 </div>
             </div><!--t_wrap-->
         </div><!--top-->
-        <div class="menu">
-            <div class="m_wrap">
-                <ul>
-                    <li><a href="#">cakes</a></li>
-                    <li><a href="#">service</a></li>
-                    <li class="logo"><a href="#"><img src="./img/logo.png" alt=""></a></li>
-                    <li><a href="#">chefs</a></li>
-                    <li><a href="#">contact</a></li>
-                </ul>
-            </div><!--m_wrap-->
-        </div><!--menu-->
     </div><!--header-->
-
+    
+    <div class="menu">
+        <div class="m_wrap">
+            <ul>
+                <li class="sec_01"><a href="#">cakes</a></li>
+                <li class="sec_02"><a href="#">service</a></li>
+                <li class="logo"><a href="#"><img src="./img/logo.png" alt=""></a></li>
+                <li class="sec_03"><a href="#">chefs</a></li>
+                <li class="sec_04"><a href="#">contact</a></li>
+            </ul>
+        </div><!--m_wrap-->
+    </div><!--menu-->
     
     <div id="main">
         <div class="wrap">
